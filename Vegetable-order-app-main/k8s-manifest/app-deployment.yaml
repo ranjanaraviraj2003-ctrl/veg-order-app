@@ -1,8 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vegitable-deployment
-  namespace: namespace-ns
+  name: vegetable-deployment
+  namespace: ranjana-ns
 
 spec:
   replicas: 3
@@ -15,7 +15,7 @@ spec:
         app: vegetable
     spec:
       containers: 
-      - name: vegitable-app
+      - name: vegetable-app
         image: ranjana10703/vegetable-order-app:v1.0.1
         ports:
         - containerPort: 3000
