@@ -8,15 +8,15 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: vegitable
+      app: vegetable
   template:
     metadata:
       labels:
-        app: vegitable
+        app: vegetable
     spec:
       containers: 
       - name: vegitable-app
-        image: vinothinisivakumar/vegitable-app:v1.0.1
+        image: ranjana10703/vegetable-order-app:v1.0.1
         ports:
         - containerPort: 3000
         env:
