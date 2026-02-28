@@ -23,7 +23,7 @@ configmap:
   MONGO_INITDB_DATABASE: "myDatabase"
 
 mongoStatefulset:
- replicas: 3
+ replicas: 4
  labels:
   app: mongodb
  name: mongo-container
