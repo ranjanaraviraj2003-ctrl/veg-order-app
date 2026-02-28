@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vegetable-deployment
+  name: vegitable-deployment
   namespace: ranjana-ns
 
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: vegetable
+      app: vegitable
   template:
     metadata:
       labels:
-        app: vegetable
+        app: vegitable
     spec:
       containers: 
-      - name: vegetable-app
-        image: ranjana10703/vegetable-order-app:v1.0.1
+      - name: vegitable-app
+        image: vinothinisivakumar/vegitable-app:v1.0.1
         ports:
         - containerPort: 3000
         env:
